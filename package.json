@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-dispatch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create an ndarray function interface which performs multiple dispatch.",
   "license": "Apache-2.0",
   "author": {
