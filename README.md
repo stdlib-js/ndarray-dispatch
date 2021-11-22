@@ -20,7 +20,7 @@ limitations under the License.
 
 # Dispatch
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Create an [ndarray][@stdlib/ndarray/ctor] function interface which performs multiple dispatch.
 
@@ -122,7 +122,7 @@ fcn( x, y );
 The function accepts the following arguments:
 
 -   **fcns**: list of [ndarray][@stdlib/ndarray/ctor] functions.
--   **types**: one-dimensional list of [ndarray][@stdlib/ndarray/ctor] argument data types. The length of `types` must be the number of [ndarray][@stdlib/ndarray/ctor] functions multiplied by `nin+nout`. If `fcns` is a function, rather than a list, the number of [ndarray][@stdlib/ndarray/ctor] functions is computed as `types.length / (nin+nout)`.
+-   **types**: one-dimensional list of [ndarray][@stdlib/ndarray/ctor] argument [data types][@stdlib/ndarray/dtypes]. The length of `types` must be the number of [ndarray][@stdlib/ndarray/ctor] functions multiplied by `nin+nout`. If `fcns` is a function, rather than a list, the number of [ndarray][@stdlib/ndarray/ctor] functions is computed as `types.length / (nin+nout)`.
 -   **data**: [ndarray][@stdlib/ndarray/ctor] function data (e.g., callbacks). If a list, the length of `data` must equal the number of [ndarray][@stdlib/ndarray/ctor] functions. If `null`, a returned [ndarray][@stdlib/ndarray/ctor] function interface does **not** provide a `data` argument to an invoked [ndarray][@stdlib/ndarray/ctor] function.
 -   **nargs**: total number of [ndarray][@stdlib/ndarray/ctor] function interface arguments.
 -   **nin**: number of input [ndarrays][@stdlib/ndarray/ctor].
@@ -319,8 +319,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-dispatch/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-dispatch?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/ndarray-dispatch.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/ndarray-dispatch/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
@@ -336,6 +340,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
 [@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
+
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
 <!-- </related-links> -->
 

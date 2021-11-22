@@ -44,7 +44,6 @@
     "@stdlib/assert-is-ndarray-like": "^0.0.x",
     "@stdlib/assert-is-nonnegative-integer": "^0.0.x",
     "@stdlib/assert-is-positive-integer": "^0.0.x",
-    "@stdlib/assert-is-string-array": "^0.0.x",
     "@stdlib/types": "^0.0.x"
   },
   "devDependencies": {
@@ -62,7 +61,9 @@
     "@stdlib/ndarray-base-numel": "^0.0.x",
     "@stdlib/ndarray-base-unary": "^0.0.x",
     "@stdlib/ndarray-ctor": "^0.0.x",
+    "@stdlib/ndarray-dtypes": "^0.0.x",
     "@stdlib/ndarray-ind2sub": "^0.0.x",
+    "@stdlib/strided-dtypes": "^0.0.x",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-spec": "5.x.x"
