@@ -46,7 +46,7 @@
     "@stdlib/assert-is-positive-integer": "^0.1.0",
     "@stdlib/ndarray-base-dtype-resolve-enum": "^0.1.0",
     "@stdlib/ndarray-dtype": "github:stdlib-js/ndarray-dtype#main",
-    "@stdlib/string-format": "^0.1.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.1",
     "@stdlib/types": "^0.1.0"
   },
   "devDependencies": {
