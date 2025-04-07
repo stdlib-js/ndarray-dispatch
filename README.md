@@ -41,14 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-dispatch
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dispatch@deno/mod.js';
+var dispatch = require( '@stdlib/ndarray-dispatch' );
 ```
 
 #### dispatch( fcns, types, data, nargs, nin, nout )
@@ -58,10 +76,10 @@ Returns an [ndarray][@stdlib/ndarray/ctor] function interface which performs mul
 <!-- eslint-disable array-element-newline -->
 
 ```javascript
-import unary from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
+var unary = require( '@stdlib/ndarray-base-unary' );
+var Float64Array = require( '@stdlib/array-float64' );
+var Float32Array = require( '@stdlib/array-float32' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
 
 function foo( x ) {
     return x * 10.0;
@@ -169,7 +187,7 @@ The function accepts the following arguments:
     <!-- eslint-disable array-element-newline -->
 
     ```javascript
-    import unary from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary@deno/mod.js';
+    var unary = require( '@stdlib/ndarray-base-unary' );
 
     function foo( x ) {
         return x * 10.0;
@@ -200,7 +218,7 @@ The function accepts the following arguments:
     <!-- eslint-disable array-element-newline -->
 
     ```javascript
-    import unary from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary@deno/mod.js';
+    var unary = require( '@stdlib/ndarray-base-unary' );
 
     function foo( x ) {
         return x * 10.0;
@@ -233,11 +251,11 @@ The function accepts the following arguments:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import unary from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dispatch@deno/mod.js';
+var unary = require( '@stdlib/ndarray-base-unary' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var abs = require( '@stdlib/math-base-special-abs' );
+var Float64Array = require( '@stdlib/array-float64' );
+var dispatch = require( '@stdlib/ndarray-dispatch' );
 
 var types = [ 'float64', 'float64' ];
 
@@ -286,7 +304,7 @@ console.log( ybuf );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -303,7 +321,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -349,11 +367,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-dispatch/main/LICENSE
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/deno
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
 <!-- <related-links> -->
 
