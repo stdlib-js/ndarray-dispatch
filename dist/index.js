@@ -1,0 +1,19 @@
+"use strict";var y=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var b=y(function(D,w){"use strict";function V(e,r,a,u,m,f,i,o,l){var h,n,s,t;for(h=f,s=0;s<e;s++){for(n=l,t=0;t<r&&a[h+t*m]===i[n];t++)n+=o;if(t===r)return s;h+=u}return-1}w.exports=V});var x=y(function(L,T){"use strict";var E=require("@stdlib/assert-is-nonnegative-integer").isPrimitive,k=require("@stdlib/assert-is-positive-integer"),F=require("@stdlib/assert-is-integer").isPrimitive,I=require("@stdlib/assert-is-function-array"),j=require("@stdlib/assert-is-function"),q=require("@stdlib/assert-is-collection"),A=require("@stdlib/assert-is-ndarray-like"),v=require("@stdlib/string-format"),O=require("@stdlib/ndarray-dtype"),P=require("@stdlib/ndarray-base-dtype-resolve-enum"),U=require("@stdlib/ndarray-base-dtypes2enums"),N=b();function S(e,r,a,u,m,f){var i,o,l;if(j(e))l=e;else if(!I(e))throw new TypeError(v("invalid argument. First argument must be either a function or an array of functions. Value: `%s`.",e));if(!q(r))throw new TypeError(v("invalid argument. Second argument must be an array-like object. Value: `%s`.",r));if(!q(a)&&a!==null)throw new TypeError(v("invalid argument. Third argument must be an array-like object or null. Value: `%s`.",a));if(!k(u))throw new TypeError(v("invalid argument. Fourth argument must be a positive integer. Value: `%s`.",u));if(!E(m))throw new TypeError(v("invalid argument. Fifth argument must be a nonnegative integer. Value: `%s`.",m));if(!E(f))throw new TypeError(v("invalid argument. Sixth argument must be a nonnegative integer. Value: `%s`.",f));if(i=m+f,i===0)throw new Error("invalid arguments. Interface must accept at least one input and/or output ndarray. Based on the provided arguments, `nin+nout` equals `0`.");if(u!==i)throw new Error("invalid arguments. Fourth argument does not equal the number of input and output ndarrays.");if(l){if(o=r.length/i,!F(o))throw new Error("invalid argument. Unexpected number of types. A type must be specified for each input and output ndarray for each provided ndarray function.")}else if(o=e.length,r.length!==o*i)throw new Error("invalid argument. Unexpected number of types. A type must be specified for each input and output ndarray for each provided ndarray function.");if(a&&a.length!==o)throw new Error("invalid argument. The third argument must have the same number of elements as the first argument.");return r=U(r),h;function h(){var n,s,t,g,d,c,p;if(t=arguments.length,t!==u)throw t<u?new Error("invalid invocation. Insufficient arguments."):new Error("invalid invocation. Too many arguments.");for(n=[],s=[],p=0;p<u;p++){if(d=arguments[p],!A(d))throw p<m?new TypeError(v("invalid argument. Input array must be an ndarray-like object. Value: `%s`.",d)):new TypeError(v("invalid argument. Output array must be an ndarray-like object. Value: `%s`.",d));n.push(d),s.push(P(O(d)))}if(g=N(o,i,r,i,1,0,s,1,0),g<0)throw new TypeError("invalid arguments. Unable to resolve an ndarray function supporting the provided array argument data types.");if(l?c=l:c=e[g],a?c(n,a[g]):c(n),f===1)return n[i-1];if(f!==0)return n.slice(m)}}T.exports=S});var B=x();module.exports=B;
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2021 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+//# sourceMappingURL=index.js.map
