@@ -44,6 +44,7 @@
     "@stdlib/assert-is-ndarray-like": "^0.2.2",
     "@stdlib/assert-is-nonnegative-integer": "^0.2.2",
     "@stdlib/assert-is-positive-integer": "^0.2.2",
+    "@stdlib/blas-ext-base-gindex-of-row": "github:stdlib-js/blas-ext-base-gindex-of-row#main",
     "@stdlib/ndarray-base-dtype-resolve-enum": "^0.2.2",
     "@stdlib/ndarray-base-dtypes2enums": "github:stdlib-js/ndarray-base-dtypes2enums#main",
     "@stdlib/ndarray-dtype": "^0.2.2",
