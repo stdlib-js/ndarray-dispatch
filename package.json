@@ -48,7 +48,7 @@
     "@stdlib/ndarray-base-dtype-resolve-enum": "^0.2.2",
     "@stdlib/ndarray-base-dtypes2enums": "github:stdlib-js/ndarray-base-dtypes2enums#main",
     "@stdlib/ndarray-dtype": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2",
     "@stdlib/types": "^0.4.3",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
