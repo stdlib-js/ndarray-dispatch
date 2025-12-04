@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-21)
+## Unreleased (2025-12-04)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`ac2734e`](https://github.com/stdlib-js/stdlib/commit/ac2734ecf26371d363be61dbb4f3448c9cb964d4) - **docs:** address lint errors in TSDoc comments _(by Philipp Burckhardt)_
 -   [`d6074e2`](https://github.com/stdlib-js/stdlib/commit/d6074e22f1bc049ded9d4a37e1d3ecbe64ee3f7e) - **docs:** fix require path _(by Athan Reines)_
 -   [`49013b4`](https://github.com/stdlib-js/stdlib/commit/49013b4760a464c19a9c858479d8d8c1344caa58) - **docs:** access enum values via data type objects _(by Athan Reines)_
 -   [`5dde2ff`](https://github.com/stdlib-js/stdlib/commit/5dde2ff115443aa143dd19022e5593e022401920) - **refactor:** use extended BLAS utility _(by Athan Reines)_
