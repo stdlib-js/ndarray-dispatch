@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dispatch@deno/mod.js';
+import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dispatch@v0.2.3-deno/mod.js';
 ```
 
 #### dispatch( fcns, types, data, nargs, nin, nout )
@@ -237,7 +237,7 @@ import unary from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-unary@deno
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
 import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dispatch@deno/mod.js';
+import dispatch from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dispatch@v0.2.3-deno/mod.js';
 
 var types = [ 'float64', 'float64' ];
 
